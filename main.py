@@ -6,8 +6,7 @@ from datetime import datetime
 def deltatime():
     nowtime=time.time()
     #calcuting time for 10 hours later or any other time
-    querytime=int(nowtime)
-    print(querytime)
+    querytime=(int(nowtime)-10*60*60)*1000
     return querytime
 def mongodata():
     data={}
